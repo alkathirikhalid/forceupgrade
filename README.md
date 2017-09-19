@@ -28,7 +28,8 @@ There are two ways you can use the library either one will work fine, depending 
 
 ### Delegation Pattern
 
-<code>public class MainActivity extends AppCompatActivity {
+```
+public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,11 +49,12 @@ There are two ways you can use the library either one will work fine, depending 
                   }
             }
         }).execute();
-}</code>
-
+}
+```
 ### Observer Pattern
 
-<code>public class MainActivity extends AppCompatActivity implements GetPlayStoreVersionTask{
+```
+public class MainActivity extends AppCompatActivity implements GetPlayStoreVersionTask{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,7 +75,8 @@ There are two ways you can use the library either one will work fine, depending 
                    result.goToPlayStore();
                   }
     }
-}</code>
+}
+```
 
 ### Accesible and usable Methods
 <p>1. <code>isNewVersion()</code> Differentiates between the <code>currentVersion</code> installed in the device with <code>playStoreVersion</code> App Version in Play Store. <code>true</code> If the Play Store version is new, <code>false</code> If the Play Store version is old or connection failed.</p>
