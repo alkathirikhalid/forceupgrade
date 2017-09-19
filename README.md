@@ -35,15 +35,15 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 		
-		// Pass the Context and the Listener
+	// Pass the Context and the Listener
         new ForceUpgrade(this).setOnTaskCompletionListener(new GetPlayStoreVersionTask() {
             @Override
             public void onTaskCompletion(Result result) {
-				// Manipulate result as required when received.
+		// Manipulate result as required when received.
                 result.isNewVersion();
                 result.getCurrentVersion();
                 result.getPlayStoreVersion();
-				// Check if an exception occured resulting to 0 or there is no new version, prior redirect.
+		// Check if an exception occured resulting to 0 or there is no new version, prior redirect
                 if (result.isNewVersion()) {
                    result.goToPlayStore();
                   }
@@ -59,18 +59,18 @@ public class MainActivity extends AppCompatActivity implements GetPlayStoreVersi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-		// Pass the Context and the Listener
+	// Pass the Context and the Listener
         ForceUpgrade forceUpgrade = new ForceUpgrade(this, this);
         forceUpgrade.execute();
     }
 
     @Override
     public void onTaskCompletion(Result result) {
-				// Manipulate result as required when received.
+		// Manipulate result as required when received
                 result.isNewVersion();
                 result.getCurrentVersion();
                 result.getPlayStoreVersion();
-				// Check if an exception occured resulting to 0 or there is no new version, prior redirect.
+		// Check if an exception occured resulting to 0 or there is no new version, prior redirect
                 if (result.isNewVersion()) {
                    result.goToPlayStore();
                   }
