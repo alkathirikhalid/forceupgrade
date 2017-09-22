@@ -119,7 +119,7 @@ dependencies {
 # Further Resources
 <ul>
 <li>Document download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v1.01/docs.zip</li>
-<li>AAR download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v01.01/forceupgrade.aar</li>
+<li>AAR download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v1.01/forceupgrade.aar</li>
 </ul>
   
 # License
