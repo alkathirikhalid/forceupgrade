@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 result.isNewVersion();
                 result.getCurrentVersion();
                 result.getPlayStoreVersion();
-		// Check if an exception occured resulting to 0 or there is no new version, prior redirect
+		// Check if an exception occurred resulting to 0 or there is no new version, prior redirect
                 if (result.isNewVersion()) {
                    result.goToPlayStore();
                   }
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements GetPlayStoreVersi
                 result.isNewVersion();
                 result.getCurrentVersion();
                 result.getPlayStoreVersion();
-		// Check if an exception occured resulting to 0 or there is no new version, prior redirect
+		// Check if an exception occurred resulting to 0 or there is no new version, prior redirect
                 if (result.isNewVersion()) {
                    result.goToPlayStore();
                   }
@@ -119,7 +119,7 @@ dependencies {
 # Further Resources
 <ul>
 <li>Document download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v1.01/docs.zip</li>
-<li>AAR download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v01.01/connection.aar</li>
+<li>AAR download: https://github.com/alkathirikhalid/forceupgrade/releases/download/v01.01/forceupgrade.aar</li>
 </ul>
   
 # License
